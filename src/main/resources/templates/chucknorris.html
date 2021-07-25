@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CNJB</title>
+    <link th:href="@{/css/chucknorris.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="title-pane header">
+    <img th:src="@{/img/chuck.jpg}" alt="Chuck">
+    <h1>Chuck Norris Joke Box</h1>
+</div>
+<div class="joke-pane">
+    <p>cn@toaster:~$ <span th:text="${joke}"></span></p>
+</div>
+</body>
+</html>
